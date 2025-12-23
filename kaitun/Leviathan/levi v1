@@ -8,7 +8,7 @@ local Lighting = game:GetService("Lighting")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 
--- Config mặc định
+-- Config setting
 local Config = {
     AutoFarm = false,
     AutoFarmLevel = false,
@@ -215,8 +215,8 @@ local Config = {
 -- Tạo Window chính
 local Window = Rayfield:CreateWindow({
     Name = "Astra X Hub | Kaitun Levi",
-    LoadingTitle = "Astra X Hub đang khởi động...",
-    LoadingSubtitle = "by Astra Team",
+    LoadingTitle = "Astra X Hub loading...",
+    LoadingSubtitle = "by _Wt",
     ConfigurationSaving = {
         Enabled = true,
         FolderName = "AstraXHub",
@@ -243,7 +243,7 @@ local Window = Rayfield:CreateWindow({
 Rayfield:SetTheme("Aqua")
 
 -- Main Tab
-local MainTab = Window:CreateTab("📊 Main", nil)
+local MainTab = Window:CreateTab("Main", nil)
 
 -- Auto Farm Section
 local AutoFarmSection = MainTab:CreateSection("Auto Farm")
@@ -404,7 +404,7 @@ local AutoKenToggle = MainTab:CreateToggle({
 })
 
 -- World Tab
-local WorldTab = Window:CreateTab("🌍 World", nil)
+local WorldTab = Window:CreateTab("World", nil)
 
 -- Sea Events Section
 local SeaEventsSection = WorldTab:CreateSection("Sea Events")
@@ -507,7 +507,7 @@ local AutoHolyTorchToggle = WorldTab:CreateToggle({
 })
 
 -- Melee Tab
-local MeleeTab = Window:CreateTab("👊 Melee", nil)
+local MeleeTab = Window:CreateTab("Melee", nil)
 
 -- Auto Melee Section
 local AutoMeleeSection = MeleeTab:CreateSection("Auto Melee")
@@ -664,7 +664,7 @@ local AutoSoruToggle = MeleeTab:CreateToggle({
 })
 
 -- Sword Tab
-local SwordTab = Window:CreateTab("⚔️ Sword", nil)
+local SwordTab = Window:CreateTab("Sword", nil)
 
 -- Auto Sword Section
 local AutoSwordSection = SwordTab:CreateSection("Auto Sword")
@@ -765,7 +765,7 @@ local SelectedMasteryWeaponDropdown = SwordTab:CreateDropdown({
 })
 
 -- Fruit Tab
-local FruitTab = Window:CreateTab("🍎 Fruit", nil)
+local FruitTab = Window:CreateTab(" Fruit", nil)
 
 -- Auto Fruit Section
 local AutoFruitSection = FruitTab:CreateSection("Auto Fruit")
@@ -863,7 +863,7 @@ local SelectedFruitMasteryDropdown = FruitTab:CreateDropdown({
 })
 
 -- Setting Tab
-local SettingTab = Window:CreateTab("⚙️ Settings", nil)
+local SettingTab = Window:CreateTab("Settings", nil)
 
 -- Combat Settings Section
 local CombatSettingsSection = SettingTab:CreateSection("Combat Settings")
@@ -1350,7 +1350,7 @@ local NotifyWhenChestToggle = SettingTab:CreateToggle({
 })
 
 -- Player Tab
-local PlayerTab = Window:CreateTab("👤 Player", nil)
+local PlayerTab = Window:CreateTab("Player", nil)
 
 -- Player List Section
 local PlayerListSection = PlayerTab:CreateSection("Player List")
@@ -1480,7 +1480,7 @@ local UnspectateButton = PlayerTab:CreateButton({
 })
 
 -- Information Tab
-local InfoTab = Window:CreateTab("ℹ️ Info", nil)
+local InfoTab = Window:CreateTab("ℹInfo", nil)
 
 -- Status Section
 local StatusSection = InfoTab:CreateSection("Status")
@@ -4133,7 +4133,7 @@ end
 -- ============================================
 
 -- Thêm tab Leviathan chuyên sâu
-local LeviathanTab = Window:CreateTab("🐉 Leviathan", nil)
+local LeviathanTab = Window:CreateTab("Leviathan", nil)
 
 -- Section: Leviathan Control
 local LeviathanControlSection = LeviathanTab:CreateSection("Leviathan Control")
@@ -5422,7 +5422,7 @@ end
 -- GUI OPTIMIZATION TAB
 -- ============================================
 
-local OptimizationTab = Window:CreateTab("⚡ Optimization", nil)
+local OptimizationTab = :CreateTab("⚡ Optimization", nil)
 
 -- Performance Section
 local PerformanceSection = OptimizationTab:CreateSection("Performance Settings")
@@ -5659,7 +5659,7 @@ MonitorPerformance()
 -- Thông báo hoàn thành
 Rayfield:Notify({
     Title = "Astra X Hub - Leviathan",
-    Content = "Hệ thống Leviathan đã sẵn sàng với tối ưu hiệu suất!",
+    Content = "Start Scripts",
     Duration = 5,
     Image = nil
 })
@@ -5668,7 +5668,7 @@ Rayfield:Notify({
 if Config.AutoLeviathan then
     wait(3)
     EnhancedLeviathanFarmer()
-    SendNotification("Bắt đầu farm Leviathan với hệ thống tối ưu!")
+    SendNotification("Start")
 end
 
 -- ============================================
